@@ -56,4 +56,5 @@ def averageNumber(values):
     average_Number = total / count
     return average_Number
 
-main()
+if __name__ == "__main__": #makes sure main runs only when the script is executed directly
+    main()
