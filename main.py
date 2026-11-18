@@ -12,8 +12,9 @@ def readValues(filename):
             values += line.strip() + ";"
     return values
 
-def analyseValues(values):
+def analyseValues(filename, values):
     print("#### Number analysis - START ####")
+    print(f'File "{filename}" results:')
     count = countNumbers(values)
     sumNumber = sumNumbers(values)
     greatest = greatestNumber(values)
@@ -56,5 +57,5 @@ def averageNumber(values):
     average_Number = total / count
     return average_Number
 
-if __name__ == "__main__": #makes sure main runs only when the script is executed directly
+if __name__ == "__main__": #makes sure main() runs only when the script is executed directly
     main()
